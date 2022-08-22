@@ -1,0 +1,42 @@
+CREATE TABLE south_texas_cars (id INTEGER PRIMARY KEY, make TEXT, model TEXT, year INTEGER, wheel_drive TEXT, price INTEGER); 
+
+
+INSERT INTO south_texas_cars VALUES (1,"toyota","landcruiser",1993,"AWD","10999");
+INSERT INTO south_texas_cars VALUES (2,"toyota","supra",2021,"RWD","61999");
+INSERT INTO south_texas_cars VALUES (3,"ford","F150",2013,"rwd","4999");
+INSERT INTO south_texas_cars VALUES (4,"chevrolet","tahoe",2013,"rwd","13999");
+INSERT INTO south_texas_cars VALUES (5,"nissan","altima",2016,"FWD","18999");
+INSERT INTO south_texas_cars VALUES (6,"honda","civic",2016,"rwd","19999");
+INSERT INTO south_texas_cars VALUES (7,"ford","focus",2013,"fwd","18999");
+INSERT INTO south_texas_cars VALUES (8,"TOYOTA","COROLLA",2022,"fwd","23999");
+INSERT INTO south_texas_cars VALUES (9,"TOYOTA","CH-R",2021,"fwd","25999");
+INSERT INTO south_texas_cars values (10,"ford","mustang",2021,"rwd","32999");
+INSERT INTO south_texas_cars VALUES (11,"CHEVROLET","CORVETT",2021,"rwd","78999");
+INSERT INTO south_texas_cars VALUES (12,"TESLA","MODEL 3",2020,"awd","68999");
+INSERT INTO SOUTH_TEXAS_CARS VALUES (13,"DODGE","CHALLENGER",2018,"RWD","80999");
+INSERT INTO SOUTH_TEXAS_CARS VALUES (14,"TOYOTA","4RUNNER",1996,"4wd","13999");
+INSERT INTO SOUTH_TEXAS_CARS VALUES (15,"HONDA","VTX",2007,"rwd","7000");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SELECT*FROM south_texas_cars;
+select*from south_texas_cars order by (price) ASC;
+
+
+/*what is the most expensive car on inventory?*/
+SELECT MAX (PRICE) AS MOST_EXPENSIVE_CAR FROM SOUTH_TEXAS_CARS
+
+
